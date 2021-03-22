@@ -22,7 +22,9 @@ jobs:
       run: flake8 . --exclude ./api_yamdb/migrations/,./users/migrations/,./tests/,./data/
 
     - name: Test with pytest
-      run: pytest
+      run: |
+        source venv/bin/activate
+        python3 -m pytest
 
 
   build_and_push_to_docker_hub:
