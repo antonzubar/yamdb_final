@@ -33,7 +33,7 @@ class TitleAdmin(admin.ModelAdmin):
         'name',
         'year',
         'description',
-        'category'
+        'category',
     )
     empty_value_display = '-пусто-'
 
@@ -46,6 +46,6 @@ class ReviewAdmin(admin.ModelAdmin):
         'author',
         'title',
         'text',
-        'score'
+        'score',
     )
     empty_value_display = '-пусто-'
