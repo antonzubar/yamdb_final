@@ -23,7 +23,7 @@ jobs:
 
     - name: Test with pytest
       run: |
-        source venv/bin/activate
+        source ./bin/activate
         python3 -m pytest
 
 
